@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { ReactComponent as HomeIcon } from "../../assets/home.svg";
 import { ReactComponent as LocationIcon } from "../../assets/aircraft-take-off.svg";
 import { ReactComponent as KeyIcon } from "../../assets/key.svg";
@@ -11,18 +11,22 @@ const sideBarLinks = [
   {
     icon: HomeIcon,
     spanText: "Hotel",
+    path: "/",
   },
   {
     icon: LocationIcon,
     spanText: "Flight",
+    path: "/",
   },
   {
     icon: KeyIcon,
     spanText: "Car Rentals",
+    path: "/me",
   },
   {
     icon: MapIcon,
     spanText: "Tours",
+    path: "/test",
   },
 ];
 
@@ -30,8 +34,8 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul class="side-nav">
-        {sideBarLinks.map(({ icon, spanText }) => (
-          <ListItem key={spanText} Icon={icon} spanText={spanText} />
+        {sideBarLinks.map(({ icon, spanText, path }) => (
+          <ListItem key={spanText} Icon={icon} spanText={spanText} path={path} />
         ))}
       </ul>
 

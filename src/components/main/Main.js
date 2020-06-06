@@ -1,12 +1,13 @@
-import React from 'react';
-import "./main.scss"
+import React from "react";
+import PhotoGallery from "../photo-gallery/PhotoGallery";
+import "./main.scss";
 
 const Main = () => {
   return (
     <div className="main">
-      Main
+      <PhotoGallery />
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
