@@ -1,6 +1,7 @@
 import React from "react";
 import PhotoGallery from "../photo-gallery/PhotoGallery";
 import Overview from "../overview/Overview";
+import Details from "../details/Details";
 import "./main.scss";
 
 const Main = () => {
@@ -8,6 +9,7 @@ const Main = () => {
     <div className="main">
       <PhotoGallery />
       <Overview />
+      <Details />
     </div>
   );
 };
