@@ -8,7 +8,7 @@ const userReviews = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.",
     userName: "Nick Smith",
     date: "Feb 23rd, 2020",
-    image: "../../assets/user.jpg",
+    image: "img/user-1.jpg",
     reviewRating: 7.8,
   },
   {
@@ -16,7 +16,7 @@ const userReviews = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.",
     userName: "Mary Thomas",
     date: "March 23rd, 2020",
-    image: "../../assets/user.jpg",
+    image: "img/user-2.jpg",
     reviewRating: 9.3,
   },
 ];

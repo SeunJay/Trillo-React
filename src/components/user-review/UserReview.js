@@ -1,13 +1,13 @@
 import React from "react";
 import "./user-review.scss";
 
-const UserReview = ({ review, userName, date, reviewRating }) => {
+const UserReview = ({ review, userName, date, reviewRating, image }) => {
   return (
     <div className="review">
       <blockquote class="review__text">{review}</blockquote>
 
       <figcaption className="review__user">
-        <img src="img/user-1.jpg" alt="User 1" class="review__photo"></img>
+        <img src={image} alt="User 1" class="review__photo"></img>
 
         <div class="review__user-box">
           <p class="review__user-name">{userName}</p>
